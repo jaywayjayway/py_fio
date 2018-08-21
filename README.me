@@ -1,0 +1,39 @@
+## 使用方法
+
+ 直接下载py_fio.py文件并添加可执行权限并运行
+ 
+ ```python 
+ ## 获取使用帮助 ## 
+ usage: py_fio.py [-h] [--device DEVICE] [--iodepth IODEPTH] [--mode MODE]
+                 [--size SIZE] [--block_size BLOCK_SIZE] [--numjobs NUMJOBS]
+                 [--runtime RUNTIME] [--parse_file PARSE_FILE]
+                 [--description DESCRIPTION]
+
+fio test unit
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --device DEVICE       direct device or mountpoint, example: --device
+                        /dev/sdb or --device /mnt/disk05
+  --iodepth IODEPTH     default iodepth=1
+  --mode MODE           default mode=read,write,randread,randwrite
+  --size SIZE           default size=30G, but ALL space for block device
+  --block_size BLOCK_SIZE, -bs BLOCK_SIZE
+                        default block-size=4K
+  --numjobs NUMJOBS     default numjobs=1
+  --runtime RUNTIME     default runtime=30
+  --parse_file PARSE_FILE, -f PARSE_FILE
+                        parse file
+  --description DESCRIPTION, --des DESCRIPTION
+                        add description for io test unit
+ 
+ 
+ ```
+ 
+ 使用案列
+ 
+ ```python
+ 
+ 
+ 
+ ```
