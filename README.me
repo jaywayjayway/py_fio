@@ -1,9 +1,13 @@
 ## 使用方法
 
- 直接下载py_fio.py文件并添加可执行权限并运行
+### 安装fio
+```
+yum install fio -y   
+```
+ 直接下载`py_fio.py`文件并添加可执行权限并运行
  
- ```python 
- ## 获取使用帮助 ## 
+### 获取使用帮助
+```shell
  usage: py_fio.py [-h] [--device DEVICE] [--iodepth IODEPTH] [--mode MODE]
                  [--size SIZE] [--block_size BLOCK_SIZE] [--numjobs NUMJOBS]
                  [--runtime RUNTIME] [--parse_file PARSE_FILE]
@@ -27,13 +31,13 @@ optional arguments:
   --description DESCRIPTION, --des DESCRIPTION
                         add description for io test unit
  
+```
+### 使用案列
+
+```shell
+$python py_fio.py   --device /data/  --iodepth 4 --mode randwrite  --numjobs 4  --size=1G --runtime  20 --des " fio test"
  
- ```
- 
- 使用案列
- 
- ```python
+```
  
  
  
- ```
